@@ -2,6 +2,7 @@ package application;
 
 import service.ApiService;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -21,6 +22,12 @@ public class Main {
             }
 
             apiService.getRequest(address);
+        }
+
+        try {
+            apiService.writeResponse();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
         }
     }
 }
