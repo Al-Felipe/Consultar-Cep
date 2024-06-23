@@ -1,5 +1,6 @@
 package service;
 
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -34,5 +35,11 @@ public class ApiService {
         } catch (InterruptedException e) {
             System.out.println(e.getMessage());
         }
+    }
+
+    public void writeResponse() throws IOException {
+        FileWriter fileWriter = new FileWriter("cep.json");
+        fileWriter.write(String.valueOf(cepList));
+        fileWriter.close();
     }
 }
