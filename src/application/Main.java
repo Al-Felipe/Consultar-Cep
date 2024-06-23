@@ -1,5 +1,7 @@
 package application;
 
+import service.ApiService;
+
 import java.util.Scanner;
 
 public class Main {
@@ -7,6 +9,7 @@ public class Main {
         String menu = "Digite o cep para busca ou sair para finalizar a aplicação:";
         Scanner sc = new Scanner(System.in);
         String address = "";
+        ApiService apiService = new ApiService();
 
         System.out.println("Bem vindo(a)");
         while (!address.equalsIgnoreCase("sair")) {
@@ -16,6 +19,8 @@ public class Main {
             if (address.equalsIgnoreCase("sair")) {
                 break;
             }
+
+            apiService.getRequest(address);
         }
     }
 }
