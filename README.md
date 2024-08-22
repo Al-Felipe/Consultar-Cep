@@ -17,8 +17,4 @@ https://viacep.com.br/
 ## Tecnologias Utilizadas 
 **Linguagem de Programação:** Java
 
-**Framework**: Spring Boot
-
 **IDEA**: IntelliJ 
-
-**Teste das APIs** : Insomnia 
