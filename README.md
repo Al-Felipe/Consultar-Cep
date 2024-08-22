@@ -13,3 +13,12 @@ https://viacep.com.br/
 ## Arquivo Gerado
 
 ![arquivo](https://github.com/Al-Felipe/Consultar-Cep/assets/105646899/3af397da-35b1-4afd-a9bb-e4b345edfa2a)
+
+## Tecnologias Utilizadas 
+**Linguagem de Programação:** Java
+
+**Framework**: Spring Boot
+
+**IDEA**: IntelliJ 
+
+**Teste das APIs** : Insomnia 
